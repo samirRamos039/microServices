@@ -21,21 +21,24 @@
     <module>microservice-eureka</module>
     <module>microservice-config</module>
     <module>microservice-user</module>
+    <module>microservice-product</module>
    </modules>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>17</maven.compiler.release>
   </properties>
 
-  <dependencyManagement>
-    
-  </dependencyManagement>
-
   <dependencies>
-    <groupId>org.proyectolombok</groupId>
-		<artifactId>Lombok</artifactId>
-		<versión>1.18.36</versión>
+   <groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
   </dependencies>
+
+  <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-webflux</artifactId>
+    <version>3.4.0</version>
+  </dependency>
 
   <build>
    <pluginManagement>

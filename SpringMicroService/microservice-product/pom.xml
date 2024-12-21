@@ -7,11 +7,11 @@
   <artifactId>SpringMicroService</artifactId>
   <version>1.0-SNAPSHOT</version>
 	</parent>
-	<groupId>com.microsevice-user</groupId>
-	<artifactId>microservice-user</artifactId>
+	<groupId>com.microservice-product</groupId>
+	<artifactId>microservice-product</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>microservice-user</name>
-	<description>Spring Boot microservide-user</description>
+	<name>microservice-product</name>
+	<description>Spring Boot microservice-product</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -49,11 +49,6 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
 		</dependency>
 
 		<dependency>
