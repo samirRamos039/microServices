@@ -1,4 +1,4 @@
-package com.example.SpringMicroService.infraestructura.service;
+package com.example.SpringMicroService.dominio.service;
 
 import com.example.SpringMicroService.domain.model.Usuario;
 import reactor.core.publisher.Mono;

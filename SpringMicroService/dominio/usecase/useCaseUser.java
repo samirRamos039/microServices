@@ -1,8 +1,8 @@
-package com.example.SpringBootMicroService.infraestructura.usecase;
+package com.example.SpringBootMicroService.dominio.usecase;
 
 import org.springframework.stereotype.Service;
-import com.example.SpringBootMicroService.infraestructura.service.userInterfaceServi;
-import com.example.SpringBootMicroService.dominio.models.userModel;
+import com.example.SpringBootMicroService.service.userInterfaceServi;
+import com.example.SpringBootMicroService.models.userModel;
 import reactor.core.publisher.Mono;
 
 @Service
