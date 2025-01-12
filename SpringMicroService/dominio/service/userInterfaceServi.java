@@ -1,6 +1,6 @@
 package com.example.SpringMicroService.dominio.service;
 
-import com.example.SpringMicroService.domain.model.Usuario;
+import com.example.SpringMicroService.model.Usuario;
 import reactor.core.publisher.Mono;
 
 public interface userInterfaceServi {

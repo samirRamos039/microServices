@@ -67,6 +67,11 @@
             <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
 
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb-reactive</artifactId>
+        </dependency>
+
         <!-- R2DBC para PostgreSQL (Conexión reactiva con base de datos SQL) -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
