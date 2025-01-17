@@ -1,4 +1,4 @@
-package com.example.SpringMicroService.infraestructura.mapper;
+package com.infraestructura.infraestructura.mapper;
 
 import org.modelmapper.ModelMapper;
 

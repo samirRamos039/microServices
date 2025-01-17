@@ -1,5 +1,4 @@
-package com.example.SpringMicroService.infraestructura.entitys;
-
+package com.infraestructura.infraestructura.entitys;
 import jakarta.persistence.Table;
 import lombok.Data;
 

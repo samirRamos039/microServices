@@ -1,4 +1,4 @@
-package com.example.SpringBootMicroService.dominio.usecase;
+
 
 import org.springframework.stereotype.Service;
 import com.example.SpringBootMicroService.service.userInterfaceServi;

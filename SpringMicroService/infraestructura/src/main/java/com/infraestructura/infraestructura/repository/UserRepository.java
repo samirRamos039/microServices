@@ -1,4 +1,4 @@
-package com.example.SpringMicroService.infraestructura.repository;
+package com.infraestructura.infraestructura.repository;
 
 import java.util.Optional;
 import com.example.SpringMicroService.infraestructura.entity.UserEntity;

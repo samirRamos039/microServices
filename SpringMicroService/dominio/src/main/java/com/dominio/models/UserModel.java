@@ -1,10 +1,9 @@
-package com.example.SpringMicroService.dominio.models;
+package com.dominio.models;
 
 import lombok.Data;
 
 @Data
-public class userModel {
-    
+public class UserModel {
     
     private Long id;
     private String name;
