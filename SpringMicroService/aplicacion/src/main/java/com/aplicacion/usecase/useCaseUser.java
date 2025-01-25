@@ -7,27 +7,32 @@ import com.dominio.models.UserModel;
 
 
 @Service
-public class useCaseUser implements UserGetawey {
+public class useCaseUser  {
 
-    @Override
-    public Mono<UserModel> saveUsuario(UserModel usuario) {
-        return null;
+    private final UserGetawey userGetawey;
+
+    public useCaseUser(UserGetawey userGetawey) {
+        this.userGetawey = userGetawey;
     }
 
-    @Override
-    public Mono<UserModel> getUsuario() {
-        return null;
+    public Mono<UserModel> saveUser(UserModel user) {
+        return userGetawey.saveUsuario(user);
     }
 
-    @Override
-    public Mono<UserModel> gerUsuarioBiId(int id) {
-        return null;
-    }
-
-    @Override
-    public Mono<UserModel> deleteUsuario(int id) {
-        return null;
+    public Mono<UserModel> getUser() {
+        return userGetawey.getUsuario();
     }
     
+    public Mono<UserModel> getUserById(int id) {
+        return userGetawey.gerUsuarioBiId(id);
+    }
+
+    public Mono<UserModel> updateUser(UserModel user) {
+        return userGetawey.updateUsuario(user);
+    }
+    
+    public Mono<UserModel> deleteUser(int id) {
+        return userGetawey.deleteUsuario(id);
+    }
 
 }
