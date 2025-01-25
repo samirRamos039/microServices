@@ -1,10 +1,10 @@
 package com.infraestructura.infraestructura.repository;
 
 import java.util.Optional;
-import com.example.SpringMicroService.infraestructura.entity.UserEntity;
-import com.example.SpringMicroService.infraestructura.repository.ReactifMongoRepository;
-import com.example.SpringMicroService.infraestructura.model.UserModel;
+import com.infraestructura.infraestructura.entitys.userEntity;
 
-public interface UserRepository extends ReactifMongoRepository<UserEntity, Integer> {
+import com.dominio.models.UserModel;
+
+public interface UserRepository extends ReactivMongoRepository<UserModel, Integer> {
     Optional<UserModel> findByUsername(String username);
 }
