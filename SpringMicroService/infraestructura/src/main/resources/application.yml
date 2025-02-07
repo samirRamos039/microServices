@@ -6,21 +6,15 @@ spring:
   application:
     name: infraestructura
   datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/microservice-user
-    username: postgres
-    password: postgres
-  jpa:
-    hibernate:
-      ddl-auto: create
-    database: POSTGRESQL  
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    mongodb:
+      url: mongodb+srv://rzagza039:a**039##a@cluster0.iaacx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
   config:
     import: optional:configserver:http://localhost:8888
-
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration  
 eureka:
   instance:
     hostname: localhost
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/      
+      defaultZone: http://localhost:8761/eureka         
