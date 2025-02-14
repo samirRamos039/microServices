@@ -7,11 +7,11 @@ import com.dominio.models.UserModel;
 
 
 @Service
-public class useCaseUser  {
+public class UseCaseUser  {
 
     private final UserGetawey userGetawey;
 
-    public useCaseUser(UserGetawey userGetawey) {
+    public UseCaseUser(UserGetawey userGetawey) {
         this.userGetawey = userGetawey;
     }
 
